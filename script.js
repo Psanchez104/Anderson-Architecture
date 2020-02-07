@@ -26,11 +26,11 @@ logoObserver.observe(logo);
 const darkObserver = new IntersectionObserver(function(entries, darkObserver){
     entries.forEach(entry => {
         if(!entry.isIntersecting){
-            nav.style.backgroundColor = "#fff";
-            navLink.style.color = "#333";
+            // nav.style.backgroundColor = "#fff";
+            // navLink.style.color = "#333";
         } else{
-            nav.style.backgroundColor = "rgba(51, 51, 51, .8)";
-            navLink.style.color = "fff";
+            // nav.style.backgroundColor = "rgba(51, 51, 51, .8)";
+            // navLink.style.color = "fff";
         }
     });
 }, darkOptions);
