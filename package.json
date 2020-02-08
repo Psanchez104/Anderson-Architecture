@@ -1,0 +1,19 @@
+{
+  "name": "anderson-architecture",
+  "version": "1.0.0",
+  "description": "A Website created to display one of many possible layouts",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Psanchez104/Anderson-Architecture.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Psanchez104/Anderson-Architecture/issues"
+  },
+  "homepage": "https://github.com/Psanchez104/Anderson-Architecture#readme"
+}
