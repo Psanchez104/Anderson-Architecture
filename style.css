@@ -1,3 +1,4 @@
+/* Universal */
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@
     background-color: #333;
 }
 
+/* Landing */
 #landing{
     background-image: url(images/landing.jpg);
     background-size: cover;
@@ -19,10 +21,9 @@
     width: auto;
 }
 
+/* Nav */
 nav{
-    /* background-color: rgba(51, 51, 51, .8); */
     background: linear-gradient(to right, rgba(51, 51, 51, 0), rgba(51, 51, 51, .8));
-    /* display: none; */
     position: fixed;
     width: 100%;
     animation: drop;
@@ -47,21 +48,42 @@ nav a{
     color: #fff;
 }
 
-
-
-#about{
-    height: 60vh;
+/* Services */
+#services{
+    /* height: 75vh; */
     display: flex;
     justify-content: space-around;
-    padding: 15px;
-    color: #fff;
+    padding: 25px;
+    text-align: center;
 }
+.box{
+    margin-top: 10vh;
+}
+#services img{
+    height: 50%;
+}
+
+#services p{
+    width: 15vw;
+    font-family: cursive;
+}
+
+/* What We Do */
 .wwd h1{
     font-family:  Arial, Helvetica, sans-serif;
     text-align: center;
-    padding-top: 5vh;
-    color: #fff;
-    font-size: 32px;
+    /* padding-top: 15vh; */
+    color: #333;
+    font-size: 142px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+/* About */
+#about{
+    display: flex;
+    justify-content: space-around;
+    color: #333;
 }
 #about h2{
     font-family: cursive;
@@ -78,32 +100,119 @@ nav a{
     transform: scale(1.1);
 }
 
+/* Consulting */
 #consulting{
-    height: 80vh;
-}
-
-#services{
-    /* height: 50vh; */
+    height: 100vh;
+    width: 95%;
+    margin: auto;
     display: flex;
     justify-content: space-around;
-    padding: 25px;
-    text-align: center;
+    /* padding: 15px; */
+    margin-top: 15vh;
 }
-.box{
+#consulting img{
+    height: 500px;
+}
+#consulting p{
+    width: 35vw;;
+    text-indent: 8%;
+    line-height: 1.4em;
+    color: #333;
     margin-top: 10vh;
 }
-#services img{
-    height: 50%;
-    /* background-color: blue; */
-    /* border-radius: 20%; */
-    /* padding: 50px; */
-}
 
-#services p{
-    width: 15vw;
-    font-family: cursive;
-}
-
+/* Footer */
 footer{
     height: 15vh;
+    color: #fff;
+    text-align: center;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+footer p{
+    padding-top: 10vh;
+}
+
+
+/* Media Queries */
+@media(max-width: 768px){
+    nav{
+        /* position: relative !important; */
+        /* background: transparent; */
+        /* animation: normal; */
+        display: none !important;
+    }
+    #landing img{
+        margin: 6vh 0 0 65vw;
+    }
+    #services p{
+        width: auto;
+        padding: 25px;
+    }
+    #about{
+        flex-direction: column;
+        align-items: center;
+    }
+    #about img{
+        width: 75vw;
+        height: auto;
+    }
+    #about img:hover{
+        transform: none;
+    }
+    #consulting{
+        padding-top: 15vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    #consulting p{
+        width: 80vw;
+        padding-bottom: 15vh;
+    }
+}
+
+@media(max-width: 420px){
+    nav{
+        display: none !important;
+    }
+    #landing img{
+        margin: 0vh 0 0 20vw;
+    }
+    #services{
+        flex-direction: column;
+    }
+    #services img{
+        height: 15vh;
+    }
+    #services p{
+        width: auto;
+        padding: 25px;
+    }
+    .wwd h1{
+        font-size: 40px;
+    }
+    #about{
+        flex-direction: column;
+        align-items: center;
+    }
+    #about img{
+        width: 75vw;
+        height: auto;
+        margin: auto;
+    }
+    #about img:hover{
+        transform: none;
+    }
+    #consulting{
+        padding-top: 15vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    #consulting p{
+        width: 80vw;
+        padding-bottom: 25vh;
+    }
+    footer p{
+        padding-bottom: 0;
+    }
 }

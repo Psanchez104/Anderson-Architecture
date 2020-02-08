@@ -7,9 +7,9 @@ const logoOptions = {
     rootMargin: "-170px 0px 0px 0px"
 }
 
-const darkOptions = {
-    rootMargin: "-510px 0px 0px 0px"
-}
+// const darkOptions = {
+//     rootMargin: "-510px 0px 0px 0px"
+// }
 
 const logoObserver = new IntersectionObserver(function(entries, logoObserver){
     entries.forEach(entry => {
@@ -23,16 +23,16 @@ const logoObserver = new IntersectionObserver(function(entries, logoObserver){
 
 logoObserver.observe(logo);
 
-const darkObserver = new IntersectionObserver(function(entries, darkObserver){
-    entries.forEach(entry => {
-        if(!entry.isIntersecting){
-            // nav.style.backgroundColor = "#fff";
-            // navLink.style.color = "#333";
-        } else{
-            // nav.style.backgroundColor = "rgba(51, 51, 51, .8)";
-            // navLink.style.color = "fff";
-        }
-    });
-}, darkOptions);
+// const darkObserver = new IntersectionObserver(function(entries, darkObserver){
+//     entries.forEach(entry => {
+//         if(!entry.isIntersecting){
+//             nav.style.backgroundColor = "#fff";
+//             navLink.style.color = "#333";
+//         } else{
+//             nav.style.backgroundColor = "rgba(51, 51, 51, .8)";
+//             navLink.style.color = "fff";
+//         }
+//     });
+// }, darkOptions);
 
-darkObserver.observe(dark);
+// darkObserver.observe(dark);
